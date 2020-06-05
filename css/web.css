@@ -1,0 +1,63 @@
+body{
+    overflow: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#Triangle{
+    width: 0px;
+    height: 0px;
+    border-top: 1920px solid #FC9D99;
+    border-left: 960px solid transparent;
+    border-right: 960px solid transparent;
+
+}
+#bg1{
+    border-bottom: #FFFF99 solid 960px;
+    border-right: 960px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#bg2{
+    border-bottom: #FFFF99 solid 960px;
+    border-left: 960px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.main>p{
+    display: block;
+    width: 1200px;
+    height: 150px;
+    font-size: 150px;
+    text-align: center;
+    line-height: 150px;
+    margin: 100px auto;
+    color: pink;
+}
+/* 移动效果 */
+.TriangleY{ 
+    transition: 1.5s;
+    transform: translateY(-1920px);
+
+}
+.bgY{
+    transition: 3.5s;
+    transform:translateY(960px);
+    opacity: 0.1;
+}
