@@ -30,8 +30,18 @@ $(function(){
     $('.Triangle').offset();
 })
 
-function touch(event){
-    if(document.ontouchstart){
-        console.log('1')
+function phone(){
+    if(window.screen.width<720){/* 当进入手机端时,取消滑轮,进入touch界面 */
+        console.log('您当前处于手机端');
+        console.log(window.screen.width);
+
+        document.ontouchstart = function(){
+            transY();
+        }
+    }
+    else{
+        console.log('您当前属于PC端');
+        console.log(window.screen.width);
     }
 }
+phone();

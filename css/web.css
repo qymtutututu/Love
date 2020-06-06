@@ -13,15 +13,15 @@ body{
 #Triangle{
     width: 0px;
     height: 0px;
-    border-top: 1920px solid #FC9D99;
-    border-left: 960px solid transparent;
-    border-right: 960px solid transparent;
+    border-top: 100vw solid #FC9D99;
+    border-left: 49.5vw solid transparent;
+    border-right: 49.5vw solid transparent;
 
 }
 #bg1{
     border-bottom: #FFFF99 solid 960px;
     border-right: 960px solid transparent;
-    position: absolute;
+    position: absolute;;
     top: 0;
     left: 0;
 }
@@ -36,7 +36,7 @@ body{
 .main{
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: absolute;;
     top: 0;
     z-index: -1;
 }
